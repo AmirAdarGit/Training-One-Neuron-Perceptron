@@ -5,6 +5,7 @@ with open("iris.txt","r") as f:
     for line in f:
         vec.append(line.split(','))
 
+
     # while i take the vector of iris.txt
     # i get two more empty room at the
     # end of the vector so the folowing lines
@@ -19,13 +20,8 @@ with open("iris.txt","r") as f:
             if line[4]=="Iris-versicolor\n":
                 line[4]=0
 
-# print(random.shuffle(vec))
-# print(vec)
-
-
-def sigmoid(x):
-    return 1/(1+np.exp(-x))
-
+print(random.shuffle(vec))
+print(vec)
 
 test_2d_vec = [[0,0],
                [0,1],
